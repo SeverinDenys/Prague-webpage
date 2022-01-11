@@ -1,0 +1,109 @@
+.header {
+  background-image: url(../img/header-photo-main1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-anchor: none;
+
+  width: 100vw;
+  height: 100vh;
+
+  &__title {
+    display: block;
+    text-align: center;
+    margin: 6rem auto;
+    font-size: 5rem;
+    font-family: $font-header-title;
+  }
+  &__text {
+    // color: white; change later
+    animation: fadeInAnimation ease 4s;
+    animation-fill-mode: forwards;
+  }
+}
+
+.navbar {
+  background-color: $color-dark;
+  opacity: 0.4;
+  animation: nav-load $nav-load-time 300ms ease-in;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    margin: 0 auto;
+    font-family: $font-header;
+  }
+
+  &__item {
+    list-style: none;
+    padding: 1rem;
+    margin: 0.7rem 1rem;
+    animation-name: nav-link-load;
+    animation-duration: $nav-link-load-time;
+    animation-timing-function: ease-in;
+    animation-delay: $nav-load-time;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+    transition: all 0.3s ease;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      border-radius: 0.3rem;
+      color: $color-dark;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit; // change later why color doesn't change
+  }
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-link-load {
+  0% {
+    transform: scale(0);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes header-title-load {
+  0% {
+    transform: scale(0);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

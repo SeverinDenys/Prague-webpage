@@ -1,0 +1,47 @@
+.about {
+  display: flex;
+  margin: 10rem 0;
+
+  &__image {
+    width: 30%;
+    float: left;
+    border-radius: 0.5rem;
+    // animation: imageAuthor 800ms ease-out; // template for future animation fade in on scroll
+  }
+
+  &__inf {
+    font-size: 2.2rem;
+    font-family: $font-paragraph;
+    margin: 3rem 10rem 2rem 55rem;
+    // animation: text 300ms ease; template for future animation fade in on scroll
+  }
+}
+
+.heading-2 {
+  text-align: center;
+  font-family: $font-header-title-2;
+  font-weight: 600;
+  font-size: 5rem;
+}
+
+// template for future animation fade in on scroll
+
+// @keyframes text {
+//   0% {
+//     transform: translateY(-45%);
+//   }
+
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
+
+// @keyframes imageAuthor {
+//   0% {
+//     transform: translateX(-100%);
+//   }
+
+//   100% {
+//     transform: translateX(0);
+//   }
+// }
