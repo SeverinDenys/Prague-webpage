@@ -12,8 +12,12 @@
   &__inf {
     font-size: 2.2rem;
     font-family: $font-paragraph;
-    margin: 3rem 10rem 2rem 55rem;
+    margin: 3rem 3rem 2rem 50rem;
     // animation: text 300ms ease; template for future animation fade in on scroll
+  }
+
+  &__container {
+    width: 130rem;
   }
 }
 

@@ -15,8 +15,8 @@ body {
   overflow-x: hidden; }
 
 .container {
-  width: 130rem;
-  margin: 0 auto; }
+  width: 114rem;
+  margin: 8rem auto; }
 
 .header {
   background-image: url(../img/header-photo-main1.jpg);
@@ -104,10 +104,50 @@ body {
   .about__inf {
     font-size: 2.2rem;
     font-family: "Montserrat", sans-serif;
-    margin: 3rem 10rem 2rem 55rem; }
+    margin: 3rem 3rem 2rem 50rem; }
+  .about__container {
+    width: 130rem; }
 
 .heading-2 {
   text-align: center;
   font-family: "Oxygen", sans-serif;
   font-weight: 600;
   font-size: 5rem; }
+
+.heading-places {
+  margin-top: -10rem;
+  margin-bottom: 8rem; }
+
+.container-places {
+  width: 120rem; }
+
+.places {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem; }
+
+.place {
+  text-align: center;
+  transition: transform 0.3s;
+  position: relative; }
+  .place:hover {
+    transform: scale(1.07); }
+  .place__photo {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    transition: transform 0.5s; }
+  .place__btn {
+    padding: 1rem;
+    width: 35rem;
+    background: linear-gradient(to right, #d1913c, #ffd194);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: -0.5rem;
+    color: white;
+    border-bottom-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem; }
