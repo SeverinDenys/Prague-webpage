@@ -208,3 +208,61 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 0.4rem; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.heading-2-people {
+  margin: 4rem 0; }
+
+.people {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 28rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  transition: transform 0.3s;
+  position: relative; }
+  .people:hover {
+    transform: scale(1.07); }
+  .people--2 {
+    max-width: 30rem; }
+  .people__img {
+    width: 100%;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    transition: transform 0.5s;
+    cursor: pointer; }
+  .people__title {
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .people__description {
+    color: grey;
+    font-size: 2rem;
+    margin: 2rem 0; }
+    .people__description--secondary {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+  .people__link {
+    text-decoration: none;
+    font-size: 22px;
+    color: black; }
+    .people__link:hover {
+      opacity: 0.7; }
+  .people__btn {
+    border: none;
+    outline: 0;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    color: white;
+    background: linear-gradient(to right, #d1913c, #ffd194);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 2rem;
+    transition: all 0.4s ease;
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem; }
+    .people__btn:hover {
+      opacity: 0.7; }
