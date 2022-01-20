@@ -239,7 +239,7 @@ body {
     margin: 2rem 0; }
   .people__description {
     color: grey;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 2rem 0; }
     .people__description--secondary {
       font-size: 1.5rem;
@@ -266,3 +266,49 @@ body {
     border-bottom-left-radius: 0.3rem; }
     .people__btn:hover {
       opacity: 0.7; }
+
+.contact__image {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 1px 4px 10px black; }
+
+.contact__container--row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.contact__left-col, .contact__right-col {
+  flex-basis: 50%; }
+
+.contact__title {
+  font-size: 5rem; }
+
+.contact__btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.contact__btn {
+  border: none;
+  outline: 0;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  color: white;
+  background: linear-gradient(to right, #d1913c, #e4b578);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 2rem;
+  flex-basis: 48%; }
+
+.form {
+  max-width: 35rem;
+  margin: 3rem 0; }
+  .form__input {
+    width: 100%;
+    padding: 1.2rem 1rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 0.2rem solid black; }
