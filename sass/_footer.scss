@@ -1,0 +1,109 @@
+.footer {
+  background: linear-gradient(to right, #d6ae7b, #eacda3);
+
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+
+  &__left,
+  &__center,
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+
+    &__icons {
+      display: block;
+      color: white;
+      padding: 2rem;
+    }
+  }
+
+  &__center {
+    width: 39%;
+
+    &--inf {
+      margin-left: 10rem;
+
+      & p {
+        margin-left: 8rem;
+        margin-top: -4rem;
+
+        & a,
+        & a:active {
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      & i {
+        background-color: #33383b;
+        color: #ffffff;
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 1.4rem 0;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__left {
+    width: 40%;
+  }
+
+  .footer__links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  .footer__link {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 2rem;
+  }
+
+  &__author {
+    color: #222;
+    font-size: 3.5rem;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -2rem;
+  }
+}
+
+//
+
+/* Footer Right */
+
+.footer__icons {
+  display: block;
+  color: white;
+  padding: 2rem;
+}
+
+.footer__icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 0.2rem;
+
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 3.5rem;
+
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
