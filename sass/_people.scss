@@ -5,23 +5,24 @@
 }
 
 .heading-2-people {
-  margin: 4rem 0;
+  margin: 5rem 0 7rem 0;
 }
 
 .people {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 28rem;
   //   margin: auto;
   text-align: center;
   margin-bottom: 5rem;
   transition: transform 0.3s;
   position: relative;
+  background-color: white;
   &:hover {
     transform: scale(1.07);
   }
 
   &--2 {
     max-width: 30rem;
+    background-color: white;
   }
 
   &__img {
@@ -77,4 +78,8 @@
       opacity: 0.7;
     }
   }
+}
+
+.fa {
+  margin: 0.5rem 0.7rem 0 0.7rem;
 }

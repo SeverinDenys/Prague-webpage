@@ -1,18 +1,24 @@
 .about {
   display: flex;
-  margin: 10rem 0;
+
+  margin-top: 5rem;
+  background-color: antiquewhite;
 
   &__image {
     width: 30%;
     float: left;
     border-radius: 0.5rem;
+    box-shadow: $box-shadow-main;
     // animation: imageAuthor 800ms ease-out; // template for future animation fade in on scroll
   }
 
   &__inf {
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-family: $font-paragraph;
     margin: 3rem 3rem 2rem 50rem;
+    font-weight: 600;
+    font-style: italic;
+    word-spacing: 0.2rem;
     // animation: text 300ms ease; template for future animation fade in on scroll
   }
 
@@ -25,7 +31,7 @@
   text-align: center;
   font-family: $font-header-title-2;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 8rem;
 }
 
 // template for future animation fade in on scroll

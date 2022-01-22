@@ -12,14 +12,15 @@ html {
 
 body {
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: antiquewhite; }
 
 .container {
   width: 114rem;
   margin: 8rem auto; }
 
 .header {
-  background-image: url(../img/header-photo-main1.jpg);
+  background-image: url(../img/header-photo-main1-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-anchor: none;
@@ -29,7 +30,7 @@ body {
     display: block;
     text-align: center;
     margin: 6rem auto;
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-family: "The Nautigal", cursive; }
   .header__text {
     animation: fadeInAnimation ease 4s;
@@ -38,7 +39,7 @@ body {
 .navbar {
   background-color: #000;
   opacity: 0.4;
-  animation: nav-load 400ms 300ms ease-in; }
+  animation: nav-load 500ms 300ms ease-in; }
   .navbar__list {
     display: flex;
     justify-content: center;
@@ -50,14 +51,9 @@ body {
     list-style: none;
     padding: 1rem;
     margin: 0.7rem 1rem;
-    animation-name: nav-link-load;
-    animation-duration: 500ms;
-    animation-timing-function: ease-in;
-    animation-delay: 400ms;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-    transition: all 0.3s ease;
-    color: white; }
+    animation: nav-load 500ms 300ms ease;
+    color: white;
+    transition: all ease 0.3s; }
     .navbar__item:hover {
       background-color: white;
       border-radius: 0.3rem;
@@ -72,22 +68,6 @@ body {
   100% {
     transform: translateY(0); } }
 
-@keyframes nav-link-load {
-  0% {
-    transform: scale(0); }
-  90% {
-    transform: scale(1.1); }
-  100% {
-    transform: scale(1); } }
-
-@keyframes header-title-load {
-  0% {
-    transform: scale(0); }
-  90% {
-    transform: scale(1.1); }
-  100% {
-    transform: scale(1); } }
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0; }
@@ -96,36 +76,41 @@ body {
 
 .about {
   display: flex;
-  margin: 10rem 0; }
+  margin-top: 5rem;
+  background-color: antiquewhite; }
   .about__image {
     width: 30%;
     float: left;
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    box-shadow: 1px 4px 10px black; }
   .about__inf {
-    font-size: 2.2rem;
-    font-family: "Montserrat", sans-serif;
-    margin: 3rem 3rem 2rem 50rem; }
+    font-size: 3rem;
+    font-family: "Cormorant Garamond", serif;
+    margin: 3rem 3rem 2rem 50rem;
+    font-weight: 600;
+    font-style: italic;
+    word-spacing: 0.2rem; }
   .about__container {
     width: 130rem; }
 
 .heading-2 {
   text-align: center;
-  font-family: "Oxygen", sans-serif;
+  font-family: "The Nautigal", cursive;
   font-weight: 600;
-  font-size: 5rem; }
+  font-size: 8rem; }
 
 .heading-places {
-  margin-top: -10rem;
-  margin-bottom: 8rem; }
+  margin-top: -5rem;
+  margin-bottom: 7rem; }
 
 .container-places {
-  width: 120rem; }
+  width: 130rem; }
 
 .places {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5rem; }
+  grid-gap: 6rem; }
 
 .place {
   text-align: center;
@@ -138,6 +123,7 @@ body {
     height: 35rem;
     object-fit: cover;
     border-radius: 0.4rem;
+    box-shadow: 0 3px 25px 7px rgba(0, 0, 0, 0.35);
     transition: transform 0.5s; }
   .place__btn {
     padding: 1rem;
@@ -150,7 +136,8 @@ body {
     margin-top: -0.5rem;
     color: white;
     border-bottom-right-radius: 0.4rem;
-    border-bottom-left-radius: 0.4rem; }
+    border-bottom-left-radius: 0.4rem;
+    box-shadow: 0 3px 25px 7px rgba(0, 0, 0, 0.35); }
 
 .gallery {
   grid-column: full-start / full-end;
@@ -209,25 +196,29 @@ body {
     display: block;
     border-radius: 0.4rem; }
 
+.heading-gallery {
+  margin-bottom: 5rem; }
+
 .wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center; }
 
 .heading-2-people {
-  margin: 4rem 0; }
+  margin: 5rem 0 7rem 0; }
 
 .people {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 28rem;
   text-align: center;
   margin-bottom: 5rem;
   transition: transform 0.3s;
-  position: relative; }
+  position: relative;
+  background-color: white; }
   .people:hover {
     transform: scale(1.07); }
   .people--2 {
-    max-width: 30rem; }
+    max-width: 30rem;
+    background-color: white; }
   .people__img {
     width: 100%;
     border-top-left-radius: 0.3rem;
@@ -266,6 +257,9 @@ body {
     border-bottom-left-radius: 0.3rem; }
     .people__btn:hover {
       opacity: 0.7; }
+
+.fa {
+  margin: 0.5rem 0.7rem 0 0.7rem; }
 
 .contact__image {
   width: 100%;
@@ -355,7 +349,8 @@ body {
   .footer .footer__links {
     color: #ffffff;
     margin: 20px 0 12px;
-    padding: 0; }
+    padding: 0;
+    font-size: 2.4rem; }
   .footer .footer__link {
     display: inline-block;
     line-height: 1.8;
@@ -370,6 +365,9 @@ body {
     text-align: center;
     margin-top: 2rem;
     margin-left: -2rem; }
+    .footer__author span {
+      font-family: "The Nautigal", cursive;
+      font-size: 6rem; }
 
 /* Footer Right */
 .footer__icons {

@@ -1,22 +1,13 @@
 // COLOR VARIABLES
-$color-primary: #d5e7ee;
-$color-primary-dark: #add8e9;
-$color-primary-dark-2: #616b75;
 
 $color-secondary: #d8ad82;
 $color-dark: #000;
 
-// $color-grey-light-1: #f9f7f6;
-// $color-grey-light-2: #aaa;
-
-// $color-grey-dark-1: #54483a;
-// $color-grey-dark-2: #6d5d4b;
-
 // FONT VARIABLES
 $font-header: "Luxurious Roman", cursive;
 $font-header-title: "The Nautigal", cursive;
-$font-header-title-2: "Oxygen", sans-serif;
-$font-paragraph: "Montserrat", sans-serif;
+$font-header-title-2: "The Nautigal", cursive;
+$font-paragraph: "Cormorant Garamond", serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px
@@ -25,5 +16,9 @@ $bp-medium: 50em; // 800px;
 $bp-small: 37.5em; // 600px;
 
 //ANIMATION
-$nav-load-time: 400ms;
-$nav-link-load-time: 500ms;
+$nav-load-time: 500ms;
+
+// shadow
+$box-shadow-main: 1px 4px 10px black;
+$box-shadow-secondary: 0 3px 25px 7px rgba(0, 0, 0, 0.35);
+$box-shadow-btn: 0 3px 25px 7px rgba(0, 0, 0, 0.35);

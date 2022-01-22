@@ -1,23 +1,24 @@
 .heading-places {
-  margin-top: -10rem;
-  margin-bottom: 8rem;
+  margin-top: -5rem;
+  margin-bottom: 7rem;
 }
 
 .container-places {
-  width: 120rem;
+  width: 130rem;
 }
 
 .places {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5rem;
+  grid-gap: 6rem;
 }
 
 .place {
   text-align: center;
   transition: transform 0.3s;
   position: relative;
+
   &:hover {
     transform: scale(1.07);
   }
@@ -49,7 +50,7 @@
     height: 35rem;
     object-fit: cover;
     border-radius: 0.4rem;
-    // box-shadow: 0 1rem 6rem black;
+    box-shadow: $box-shadow-secondary;
     transition: transform 0.5s;
   }
   &__btn {
@@ -64,5 +65,6 @@
     color: white;
     border-bottom-right-radius: 0.4rem;
     border-bottom-left-radius: 0.4rem;
+    box-shadow: $box-shadow-btn;
   }
 }
