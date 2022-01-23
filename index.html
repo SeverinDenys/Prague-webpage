@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,19 +27,22 @@
       <nav class="navbar">
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Home</a>
+            <a href="#home" class="navbar__link">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">About</a>
+            <a href="#about" class="navbar__link">About</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Places</a>
+            <a href="#places" class="navbar__link">Places</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Practical</a>
+            <a href="#gallery" class="navbar__link">Gallery</a>
           </li>
           <li class="navbar__item">
-            <a href="#" class="navbar__link">Pricing</a>
+            <a href="#people" class="navbar__link">People</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contacts" class="navbar__link">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -48,30 +52,38 @@
       </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container about__container">
-        <img src="img/Author-min.jpg" alt="Author image" class="about__image" />
-
-        <h2 class="heading-2">Your best guide</h2>
-        <p class="about__inf">
-          Hello everyone. My name is Denys. I am a decent, calm, kind, polite
-          and punctual man, always ready to gain new knowledge and willing to
-          apply it for discovery of new horizonts. I like to travel + do
-          landscape, architectural and portrait photography. Last year I was
-          lucky enough to live in Prague for 4 months and I fell in love with
-          this incredible city. It was my dream, and it was completely
-          justified!) Prague has a huge number of sculptures, paintings,
-          installations and other works of art on the streets. This city is an
-          ideal place for leisurely walkers. You will see stunning examples of
-          ancient and exquisite architecture, walk through the narrow ancient
-          streets and discover for yourself a small piece of magic of this city.
-          And I will be there to capture this moment for your memories
-        </p>
+        <img
+          src="img/Author-min.jpg"
+          alt="Author image"
+          class="about__image"
+          data-aos="fade-right"
+          data-aos-duration="900"
+          data-aos-once="true"
+        />
+        <div class="effect" data-aos="fade-left">
+          <h2 class="heading-2">Your best guide</h2>
+          <p class="about__inf">
+            Hello everyone. My name is Denys. I am a decent, calm, kind, polite
+            and punctual man, always ready to gain new knowledge and willing to
+            apply it for discovery of new horizonts. I like to travel + do
+            landscape, architectural and portrait photography. Last year I was
+            lucky enough to live in Prague for 4 months and I fell in love with
+            this incredible city. It was my dream, and it was completely
+            justified!) Prague has a huge number of sculptures, paintings,
+            installations and other works of art on the streets. This city is an
+            ideal place for leisurely walkers. You will see stunning examples of
+            ancient and exquisite architecture, walk through the narrow ancient
+            streets and discover for yourself a small piece of magic of this
+            city. And I will be there to capture this moment for your memories
+          </p>
+        </div>
       </div>
     </section>
-    <!-- after adding this section my nav links load stop working. Figure the issue!! -->
-    <div class="container container-places">
-      <h2 class="heading-2 heading-places">Places to visit</h2>
+
+    <div class="container container-places" data-aos="fade-up">
+      <h2 class="heading-2 heading-places" id="places">Places to visit</h2>
       <div class="places">
         <div class="place">
           <img src="img/Grad-min.jpg" alt="grad photo" class="place__photo" />
@@ -127,10 +139,11 @@
     </div>
 
     <!-- Photo gallery -->
-    <h2 class="heading-2 heading-gallery">Photo gallery</h2>
+    <h2 class="heading-2 heading-gallery" id="gallery">Photo gallery</h2>
     <section class="gallery">
       <figure class="gallery__item gallery__item--1">
         <img
+          loading="lazy"
           src="img/grid18-min.jpg"
           alt="Gallery image 1"
           class="gallery__img"
@@ -138,6 +151,7 @@
       </figure>
       <figure class="gallery__item gallery__item--2">
         <img
+          loading="lazy"
           src="img/grid3-min.jpg"
           alt="Gallery image 2"
           class="gallery__img"
@@ -145,6 +159,7 @@
       </figure>
       <figure class="gallery__item gallery__item--3">
         <img
+          loading="lazy"
           src="img/grid2-min.jpg"
           alt="Gallery image 3"
           class="gallery__img"
@@ -152,6 +167,7 @@
       </figure>
       <figure class="gallery__item gallery__item--4">
         <img
+          loading="lazy"
           src="img/grid4-min.jpg"
           alt="Gallery image 4"
           class="gallery__img"
@@ -159,6 +175,7 @@
       </figure>
       <figure class="gallery__item gallery__item--5">
         <img
+          loading="lazy"
           src="img/grid1-min.jpg"
           alt="Gallery image 5"
           class="gallery__img"
@@ -166,6 +183,7 @@
       </figure>
       <figure class="gallery__item gallery__item--6">
         <img
+          loading="lazy"
           src="img/grid6-min.jpg"
           alt="Gallery image 6"
           class="gallery__img"
@@ -173,6 +191,7 @@
       </figure>
       <figure class="gallery__item gallery__item--7">
         <img
+          loading="lazy"
           src="img/grid7-min.jpg"
           alt="Gallery image 7"
           class="gallery__img"
@@ -180,6 +199,7 @@
       </figure>
       <figure class="gallery__item gallery__item--8">
         <img
+          loading="lazy"
           src="img/grid8-min.jpg"
           alt="Gallery image 8"
           class="gallery__img"
@@ -187,6 +207,7 @@
       </figure>
       <figure class="gallery__item gallery__item--9">
         <img
+          loading="lazy"
           src="img/grid13-min.jpg"
           alt="Gallery image 9"
           class="gallery__img"
@@ -194,6 +215,7 @@
       </figure>
       <figure class="gallery__item gallery__item--10">
         <img
+          loading="lazy"
           src="img/grid10-min.jpg"
           alt="Gallery image 10"
           class="gallery__img"
@@ -201,6 +223,7 @@
       </figure>
       <figure class="gallery__item gallery__item--11">
         <img
+          loading="lazy"
           src="img/grid17-min.jpg"
           alt="Gallery image 11"
           class="gallery__img"
@@ -208,6 +231,7 @@
       </figure>
       <figure class="gallery__item gallery__item--12">
         <img
+          loading="lazy"
           src="img/grid21-min.jpg"
           alt="Gallery image 12"
           class="gallery__img"
@@ -215,6 +239,7 @@
       </figure>
       <figure class="gallery__item gallery__item--13">
         <img
+          loading="lazy"
           src="img/grid15-min.jpg"
           alt="Gallery image 13"
           class="gallery__img"
@@ -222,6 +247,7 @@
       </figure>
       <figure class="gallery__item gallery__item--14">
         <img
+          loading="lazy"
           src="img/grid16-min.jpg"
           alt="Gallery image 14"
           class="gallery__img"
@@ -230,52 +256,54 @@
     </section>
 
     <!-- people -->
-    <h2 class="heading-2 heading-2-people">People of Prague</h2>
-    <div class="wrapper">
-      <div class="people">
-        <img src="img/people1-min.jpg" class="people__img" alt="John" />
+    <div class="effect" data-aos="fade-up">
+      <h2 class="heading-2 heading-2-people" id="people">People of Prague</h2>
+      <div class="wrapper">
+        <div class="people">
+          <img src="img/people1-min.jpg" class="people__img" alt="John" />
 
-        <p class="people__description">Musician & Philosopher</p>
-        <p class="people__description--secondary">Music Academy Prague</p>
-        <a href="#" class="people__link"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-facebook"></i></a>
-        <button class="people__btn">Contact</button>
-      </div>
+          <p class="people__description">Musician & Philosopher</p>
+          <p class="people__description--secondary">Music Academy Prague</p>
+          <a href="#" class="people__link"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-facebook"></i></a>
+          <button class="people__btn">Contact</button>
+        </div>
 
-      <div class="people people--2">
-        <img src="img/people3-min.jpg" class="people__img" alt="John" />
+        <div class="people people--2">
+          <img src="img/people3-min.jpg" class="people__img" alt="John" />
 
-        <p class="people__description">Fortune searcher & Comedian</p>
-        <p class="people__description--secondary">
-          Academy of Performing Arts in Prague
-        </p>
-        <a href="#" class="people__link"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-facebook"></i></a>
-        <button class="people__btn">Contact</button>
-      </div>
+          <p class="people__description">Fortune searcher & Comedian</p>
+          <p class="people__description--secondary">
+            Academy of Performing Arts in Prague
+          </p>
+          <a href="#" class="people__link"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-facebook"></i></a>
+          <button class="people__btn">Contact</button>
+        </div>
 
-      <div class="people">
-        <img src="img/people2-min.jpg" class="people__img" alt="John" />
+        <div class="people">
+          <img src="img/people2-min.jpg" class="people__img" alt="John" />
 
-        <p class="people__description">Musician & Groomy leader</p>
-        <p class="people__description--secondary">MP Music Academy Prague</p>
-        <a href="#" class="people__link"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="people__link"><i class="fa fa-facebook"></i></a>
-        <button class="people__btn">Contact</button>
+          <p class="people__description">Musician & Groomy leader</p>
+          <p class="people__description--secondary">MP Music Academy Prague</p>
+          <a href="#" class="people__link"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="people__link"><i class="fa fa-facebook"></i></a>
+          <button class="people__btn">Contact</button>
+        </div>
       </div>
     </div>
 
     <!-- contacts -->
     <div class="container">
-      <section class="contact">
+      <section class="contact" id="contacts">
         <div class="contact__container contact__container--row">
-          <div class="contact__left-col">
+          <div class="contact__left-col" data-aos="fade-right">
             <h3 class="contact__title">
               Sign Up to learn more about this amazing city.
             </h3>
@@ -299,7 +327,7 @@
               </div>
             </form>
           </div>
-          <div class="contact__right-col">
+          <div class="contact__right-col" data-aos="fade-left">
             <img
               src="img/footer-min.jpg"
               alt="contact-image"
@@ -317,15 +345,15 @@
         <p class="footer__links">
           <a href="#" class="footer__link">Home</a>
 
-          <a href="#" class="footer__link">Blog</a>
-
-          <a href="#" class="footer__link">Pricing</a>
-
           <a href="#" class="footer__link">About</a>
 
-          <a href="#" class="footer__link">Faq</a>
+          <a href="#" class="footer__link">Places</a>
 
-          <a href="#" class="footer__link">Contact</a>
+          <a href="#" class="footer__link">Gallery</a>
+
+          <a href="#" class="footer__link">People</a>
+
+          <a href="#" class="footer__link">Contacts</a>
         </p>
         <p class="footer__author">
           Made with love by <span> Severin Denys </span>
@@ -358,6 +386,12 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+      });
+    </script>
   </body>
 </html>

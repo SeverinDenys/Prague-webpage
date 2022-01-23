@@ -124,7 +124,8 @@ body {
     object-fit: cover;
     border-radius: 0.4rem;
     box-shadow: 0 3px 25px 7px rgba(0, 0, 0, 0.35);
-    transition: transform 0.5s; }
+    transition: transform 0.5s;
+    cursor: pointer; }
   .place__btn {
     padding: 1rem;
     width: 35rem;
@@ -208,16 +209,17 @@ body {
   margin: 5rem 0 7rem 0; }
 
 .people {
-  max-width: 28rem;
+  max-width: 26rem;
   text-align: center;
   margin-bottom: 5rem;
   transition: transform 0.3s;
   position: relative;
-  background-color: white; }
+  background-color: white;
+  margin-top: -2rem; }
   .people:hover {
     transform: scale(1.07); }
   .people--2 {
-    max-width: 30rem;
+    max-width: 28rem;
     background-color: white; }
   .people__img {
     width: 100%;
@@ -350,7 +352,7 @@ body {
     color: #ffffff;
     margin: 20px 0 12px;
     padding: 0;
-    font-size: 2.4rem; }
+    font-size: 2rem; }
   .footer .footer__link {
     display: inline-block;
     line-height: 1.8;
